@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>4</button>
+<button>5</button>
+<ul>
+	<li>行政管理
+		<ul>
+			<li>部门管理</li>
+			<li>职务管理</li>
+			<li>员工管理</li>
+		</ul>
+	</li>
+	<li>生产管理
+		<ul>
+			<li>产品管理</li>
+			<li>库存管理</li>
+		</ul>
+	</li>
+</ul>
+<iframe src="test.html" width="800" height="600"></iframe>
+
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+	(() => {
+		App.init();
+	})();
+</script>
+
+<script type="text/javascript">
+	var obj = {
+		test: function () {
+            console.log(this);
+		}
+	}
+	obj.test();
+</script>
+
+
+
+</body>
+</html>

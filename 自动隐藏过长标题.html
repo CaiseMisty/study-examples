@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自动隐藏新闻标题</title>
+	<style>
+		.txt{
+			position: absolute;
+			width: 400px;
+			text-overflow:ellipsis;
+			white-space:nowrap;
+			overflow: hidden;
+			left:100px;
+			top: 100px;
+		}
+	
+		a{transition:0.2s;}
+		a:link{
+			text-decoration: none;
+			font-family: 微软雅黑;
+			color: #000;
+		}
+		a:visited{
+			color:#000;
+		}
+		a:hover{
+			color:#F13333;
+		}
+	</style>
+</head>
+<body>
+	<div class="txt">
+	<a href="http://www.gamersky.com/news/201506/613681.shtml">Steam大数据第二期：夏季特惠疯狂赚钱 大多数游戏悲剧</a></div>
+</body>
+</html>

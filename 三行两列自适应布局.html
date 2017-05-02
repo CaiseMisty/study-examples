@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三段两列自适应布局</title>
+</head>
+<body>
+	<body>
+<style>
+	body{display: flex; flex-flow: column;}
+	body , html{ margin: 0;border:0;padding: 0;}
+	
+	.body{
+		margin-top:50px;
+		flex:1 ; 
+		display:flex;
+		width: 1000px; 
+		align-self:center;
+	}
+	.side{
+		width: 200px;
+		margin-left: 10px;
+	}
+	.main{
+		flex:1;
+
+	}
+		
+	.head{line-height: 45px;background-color:  #45C643; position: fixed;width: 100%;height: 45px;}
+	.foot{line-height: 80px;background-color: #45C643}
+
+
+	textarea{border:0;border:0;-moz-outline:0;outline:0;overflow:auto;resize:none;-webkit-appearance:none;width:100%;}
+	
+</style>
+
+<div class="head">
+	head
+</div>
+
+<div class="body">
+	<div class="main">
+		<div class="zm-item-answer-author-info">
+            <a class="author-link" data-tip="p$t$jingfeng-su" href="/people/jingfeng-su">苏景锋Darin</a>，<span title="互联网/段子腿/过气网红/猫控/爱做饭/整合控" class="bio">互联网/段子腿/过气网红/猫控/爱做饭/整…</span>
+        </div>
+
+        <div>
+		<span class="voters">
+		<span class="user-block"><a data-tip="p$t$wang-chen-96-27" href="https://www.zhihu.com/people/wang-chen-96-27" class="zg-link" title="王晨">王晨</a>、</span><span class="user-block"><a data-tip="p$t$hua-lang-jie" href="https://www.zhihu.com/people/hua-lang-jie" class="zg-link" title="花狼藉">花狼藉</a>、</span><span class="user-block"><a data-tip="p$t$feng-hui-ting-xi-89" href="https://www.zhihu.com/people/feng-hui-ting-xi-89" class="zg-link" title="风会停息">风会停息</a></span>
+		</span>
+		<a href="javascript:;" class="more"> 等人赞同</a>
+		</div>
+		<!-- <textarea class="content hidden" rows="50"> -->
+	
+
+	</div>
+	<div class="side">side</div>
+</div>
+<!-- <div class="foot">foot</div> -->
+
+</body>
+</body>
+</html>
