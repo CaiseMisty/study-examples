@@ -44,6 +44,8 @@
 		}
 	}
 	doc.addEventListener('click', cancelSelectedRow, false);
+//  在这里！！！！
+//	
 //	function addSelectCol() {
 //		for (let i = 0; i < colNum; i++) {
 //			tHeadtr[i].addEventListener('click', function addOperCol(){
