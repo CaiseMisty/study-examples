@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+            html, body {
+                /*height: 200%;*/
+            }
+            #content {
+                width: 60%;
+                /*height: 2500px;*/
+                margin: 0 auto;
+                min-width: 600px;
+            }
+            #header {
+                background: #1ABA9C;
+                height: 200px;
+                text-align: center;
+            }
+            #left {
+                background: #FD6C1A;
+                width: 15%;
+                float: left;
+                height: 100%;
+                line-height: 100%;
+            }
+            #right {
+                width: 85%;
+                /*background: #FFF700;*/
+                float: left;
+                height: 100%;
+            }
+            #footer {
+                background: #FF7167;
+                height: 200px;
+            }
+            .clearfix::after {
+                content: '';
+                height: 0;
+                display: block;
+                clear: both;
+                visibility: hidden;
+            }
+            .center {
+                height: 2500px;
+            }
+            .box {
+                position: relative;
+            }
+            .text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                color: #fff;
+                font: 20px consolas;
+                text-shadow: 0 0 3px #000;
+            }
+            .block {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+            }
+            #block1 {
+                top: 100px;
+                left: 100px;
+                background: #C6C0C0;
+                z-index: 3;
+            }
+            #block2 {
+                top: 150px;
+                left: 150px;
+                background: #1ABA9C;
+                z-index: 2;
+            }
+            #block3 {
+                top: 180px;
+                left: 180px;
+                background: #FF7167;
+                z-index: 4;
+            }
+            #right ul li{
+            	margin-top: 10px;
+            	margin-bottom: 15px;
+            	list-style-type: none;
+            }
+            table{
+            	border-collapse: collapse;
+            }
+            #manipulate-table table, #manipulate-table th, #manipulate-table td {
+            	border: 1px solid;
+            	text-align: center;
+            }
+            #manipulate-table th, #manipulate-table td {
+            	padding: 3px 10px;
+            	height: 25px;
+            }
+            #manipulate-table{
+            	position: relative;
+            }
+            #mani-table-btns {
+            	padding: 20px;
+            }
+            #mani-table-btns button {
+            	padding: 2px 3px;
+            	border: 1px solid #888;
+            	border-radius: 2px;
+            }
+            .active{
+            	background-color: rgb(221,221,221);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="content">
+            <div id="header" class="box"><span class="text">header</span></div>
+            <div class="clearfix center">
+                <div id="left" class="box">
+                    <p class="text">left</p>
+                </div>
+                <div id="right" class="box">
+                    <p class="text">right</p>
+                    <div id="manipulate-table">
+                    	<table>
+                    		<thead>
+	                    		<tr>
+	                    			<th>书名</th>
+	                    			<th>作者</th>
+	                    			<th>出版社</th>
+	                    			<th>推荐指数（满分10）</th>
+	                    		</tr>
+                    		</thead>
+                    		<tbody>
+	                    		<tr>
+	                    			<td>JavaScript DOM编程艺术（第2版）</td>
+	                    			<td>[英]Jeremy Keith</td>
+	                    			<td>人民邮电出版社</td>
+	                    			<td>10</td>
+	                    		</tr>
+	                    		<tr>
+	                    			<td>JavaScript高级程序设计（第3版）</td>
+	                    			<td>[美]Nicholas C.Zakas</td>
+	                    			<td>人民邮电出版社</td>
+	                    			<td>10</td>
+	                    		</tr>
+	                    		<tr>
+	                    			<td>CSS权威指南</td>
+	                    			<td>Eric A.Meyer</td>
+	                    			<td>中国电力出版社</td>
+	                    			<td>7</td>
+	                    		</tr>
+	                    		<tr>
+	                    			<td>JavaScript权威指南</td>
+	                    			<td>Flanagan</td>
+	                    			<td>机械工业出版社</td>
+	                    			<td>8</td>
+	                    		</tr>
+                    		</tbody>
+                    	</table>
+                    	<div id="mani-table-btns">
+                    		<button>添加行</button>
+                    		<button>添加列</button>
+                    		<button>删除行</button>
+                    		<button>删除列</button>
+                    	</div>
+                    	<div id="hint-box"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="box">
+                <p class="text">footer</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="manipulateTable.js"></script>
+    </body>
+</html>
